@@ -6,6 +6,7 @@ import {
   CLEAR_ERRORS,
   LOGIN_FAIL,
   LOGIN_SUCCESS,
+  LOGOUT,
   REGISTER_FAIL,
   REGISTER_SUCCESS,
   USER_LOADED
@@ -90,7 +91,7 @@ const AuthState = props => {
   };
 
   // logout
-  const logout = () => console.log('logout');
+  const logout = () => dispatch({ type: LOGOUT });
 
   // clear errors
   const clearErrors = () => dispatch({ type: CLEAR_ERRORS });
